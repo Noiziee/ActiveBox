@@ -22,6 +22,12 @@ body {
   font-size: 18px;
   line-height: 1.1;
   color: #6C7279;
+  background-color: #fff;
+}
+
+.social__icon {
+  display: inline-block;
+  margin-left: 3px;
 }
 
 .btn_red {
@@ -33,6 +39,7 @@ body {
   background-color: #ff4343;
   padding: 25px 102px;
   transition: all .2s linear;
+  text-transform: uppercase;
 }
 
 .btn_red:hover {
@@ -296,11 +303,6 @@ body {
   margin-bottom: 38px;
 }
 
-.card__social-link {
-  display: inline-block;
-  margin-left: 3px;
-}
-
 /* testimonials ================ */
 
 .testimonials__inner {
@@ -358,4 +360,87 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #7E5D6F;
+}
+
+
+/* Download */
+
+.download__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 115px;
+  color: #000;
+}
+
+.download__title {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.download__subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 47px;
+}
+
+
+/* Footer ============= */
+
+.footer {
+  background-color: #353C65;
+}
+
+.footer__row {
+  padding: 71px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__col {
+  flex: 1 0 33.3333%;
+}
+
+.footer__col-title {
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.footer__col-info {
+  text-transform: capitalize;
+}
+
+.info__link {
+  color: inherit;
+}
+
+.social__icon_mt {
+  margin-top: 20px;
+}
+
+.copyright {
+  background-color: #2C3154;
+}
+
+.copyright__content {
+  padding: 24px 0;
+  text-transform: capitalize;
+  max-width: 370px;
+  margin: 0 auto;
+  color: #808080;
+}
+
+.copyright__link {
+  color: #fff;
+}
+
+.copyright__link:hover {
+  text-decoration: underline;
 }

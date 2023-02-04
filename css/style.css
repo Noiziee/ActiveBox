@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+blockquote {
+  margin: 0;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -33,6 +37,11 @@ body {
 
 .btn_red:hover {
   background-color: #eb1515;
+}
+
+.btn_red:active {
+  background-color: #ff4343;
+  box-shadow: 4px 4px 30px #FF4343;
 }
 
 .container {
@@ -79,7 +88,7 @@ body {
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #BABBC5;
+  background-color: #babbc5;
   width: 0;
   height: 3px;
   transition: all .2s linear;
@@ -87,6 +96,14 @@ body {
 
 .nav__link:hover::after {
   width: 100%;
+}
+
+.nav__link:active {
+  color: #E71414;
+}
+
+.nav__link:active::after {
+  background-color: #E71414;
 }
 
 /* Promo ================ */
@@ -97,7 +114,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 750px;
+  min-height: 750px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -140,22 +157,205 @@ body {
 
 /* Features =================== */
 
-.features {}
-
 .features__row {
   display: flex;
   flex-wrap: wrap;
   gap: 90px 30px;
   align-items: center;
   text-align: center;
+  padding: 115px 0;
 }
 
 .features__col {
-  flex: 1 0 30%;
+  flex: 0 0 30%;
 }
 
-.features__col-image {}
+.features__col-image {
+  margin-bottom: 29px;
+}
 
-.features__col-title {}
+.features__col-title {
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #2D3033;
+  margin-bottom: 20px;
+}
 
-.features__col-text {}
+/* Works ============== */
+
+.works__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 115px;
+}
+
+.works__item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 25%;
+  height: 340px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.works__item:hover .works__content {
+  opacity: 1;
+}
+
+.works__item:active .works__content {
+  background: rgba(185, 12, 12, 0.8);
+}
+
+.works__photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+
+.works__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 67, 67, 0.8);
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  border: 2px solid #fff;
+}
+
+.works__title {
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.works__lead {
+  font-size: 18px;
+}
+
+/* Team =============== */
+
+.team {
+  margin-bottom: 115px;
+}
+
+.team__inner {
+  display: flex;
+  gap: 30px;
+}
+
+.team__card {
+  width: 25%;
+}
+
+.team__card-avatar {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__name {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #2d3033;
+  margin-bottom: 5px;
+}
+
+.card__profesion {
+  text-transform: uppercase;
+  color: #ff4343;
+  margin-bottom: 18px;
+}
+
+.card__content {
+  margin-bottom: 38px;
+}
+
+.card__social-link {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+/* testimonials ================ */
+
+.testimonials__inner {
+  margin-bottom: 115px;
+}
+
+.testimonials__wrapper {
+  position: relative;
+}
+
+.testimonials__row {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials__col {
+  margin-bottom: 61px;
+}
+
+.testimonials__col_right {
+  background-color: #5C3249;
+  padding: 133px 170px 116px 129px;
+}
+
+.blockquote {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  text-transform: capitalize;
+  max-width: 471px;
+  margin-bottom: 17px;
+}
+
+.cite {
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.swiper-pagination-bullet {
+  border: 1px solid #7E5D6F;
+  background: transparent;
+  width: 14px;
+  height: 14px;
+  margin: 0 12px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 12px);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7E5D6F;
+}

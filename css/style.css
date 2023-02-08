@@ -30,7 +30,7 @@ body {
   margin-left: 3px;
 }
 
-.btn_red {
+.btn {
   display: inline-flex;
   align-items: center;
   font-weight: 900;
@@ -42,11 +42,11 @@ body {
   text-transform: uppercase;
 }
 
-.btn_red:hover {
+.btn:hover {
   background-color: #eb1515;
 }
 
-.btn_red:active {
+.btn:active {
   background-color: #ff4343;
   box-shadow: 4px 4px 30px #FF4343;
 }

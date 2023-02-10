@@ -761,7 +761,7 @@ body {
   }
 
   .card__photo {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .team {

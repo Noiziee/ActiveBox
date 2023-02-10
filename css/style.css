@@ -706,6 +706,7 @@ body {
 
   .cite {
     font-size: 12px;
+
   }
 
   .testimonials__col_right {
@@ -821,6 +822,10 @@ body {
 
   .works__item {
     height: 144px;
+  }
+
+  .cite {
+    margin-right: auto;
   }
 }
 

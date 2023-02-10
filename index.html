@@ -22,13 +22,19 @@
         <a class="header__logo" href="#">
           <img class="header__logo-image" src="./images/logo.svg" alt="activebox">
         </a>
-        <nav class="nav">
-          <a class="nav__link" href="#">features</a>
-          <a class="nav__link" href="#">works</a>
-          <a class="nav__link" href="#">our team</a>
-          <a class="nav__link" href="#">testimonials</a>
-          <a class="nav__link" href="#">download</a>
-        </nav>
+        <div class="burger-menu">
+          <input id="menu__toggle" type="checkbox" style="display: none" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <nav class="nav">
+            <a class="nav__link" href="#">features</a>
+            <a class="nav__link" href="#">works</a>
+            <a class="nav__link" href="#">our team</a>
+            <a class="nav__link" href="#">testimonials</a>
+            <a class="nav__link" href="#">download</a>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -50,59 +56,67 @@
     </section>
     <section class="features">
       <div class="container">
-        <div class="features__row">
-          <div class="features__col">
-            <img class="features__col-image" src="./images/icon-1.svg" alt="image">
-            <h3 class="features__col-title">Easily Customised</h3>
-            <div class="features__col-text">
-              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel
-              eu leo. Donec
-              ullamcorper nulla non metus auctor fringilla.
+        <div class="features__inner">
+          <div class="features__row">
+            <div class="features__col">
+              <img class="features__col-image" src="./images/icon-1.svg" alt="image">
+              <h3 class="features__col-title">Easily Customised</h3>
+              <div class="features__col-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare
+                vel
+                eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </div>
             </div>
-          </div>
-          <div class="features__col">
-            <img class="features__col-image" src="./images/icon-2.svg" alt="image">
-            <h3 class="features__col-title">Responsive REady</h3>
-            <div class="features__col-text">
-              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel
-              eu leo. Donec
-              ullamcorper nulla non metus auctor fringilla.
+            <div class="features__col">
+              <img class="features__col-image" src="./images/icon-2.svg" alt="image">
+              <h3 class="features__col-title">Responsive REady</h3>
+              <div class="features__col-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare
+                vel
+                eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </div>
             </div>
-          </div>
-          <div class="features__col">
-            <img class="features__col-image" src="./images/icon-3.svg" alt="image">
-            <h3 class="features__col-title">Modern Design</h3>
-            <div class="features__col-text">
-              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel
-              eu leo. Donec
-              ullamcorper nulla non metus auctor fringilla.
+            <div class="features__col">
+              <img class="features__col-image" src="./images/icon-3.svg" alt="image">
+              <h3 class="features__col-title">Modern Design</h3>
+              <div class="features__col-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare
+                vel
+                eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </div>
             </div>
-          </div>
-          <div class="features__col">
-            <img class="features__col-image" src="./images/icon-4.svg" alt="image">
-            <h3 class="features__col-title">Clean Code</h3>
-            <div class="features__col-text">
-              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel
-              eu leo. Donec
-              ullamcorper nulla non metus auctor fringilla.
+            <div class="features__col">
+              <img class="features__col-image" src="./images/icon-4.svg" alt="image">
+              <h3 class="features__col-title">Clean Code</h3>
+              <div class="features__col-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare
+                vel
+                eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </div>
             </div>
-          </div>
-          <div class="features__col">
-            <img class="features__col-image" src="./images/icon-5.svg" alt="image">
-            <h3 class="features__col-title">Ready to Ship</h3>
-            <div class="features__col-text">
-              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel
-              eu leo. Donec
-              ullamcorper nulla non metus auctor fringilla.
+            <div class="features__col">
+              <img class="features__col-image" src="./images/icon-5.svg" alt="image">
+              <h3 class="features__col-title">Ready to Ship</h3>
+              <div class="features__col-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare
+                vel
+                eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </div>
             </div>
-          </div>
-          <div class="features__col">
-            <img class="features__col-image" src="./images/icon-6.svg" alt="image">
-            <h3 class="features__col-title">Download for Free</h3>
-            <div class="features__col-text">
-              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel
-              eu leo. Donec
-              ullamcorper nulla non metus auctor fringilla.
+            <div class="features__col">
+              <img class="features__col-image" src="./images/icon-6.svg" alt="image">
+              <h3 class="features__col-title">Download for Free</h3>
+              <div class="features__col-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare
+                vel
+                eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </div>
             </div>
           </div>
         </div>
